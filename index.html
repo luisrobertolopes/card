@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 20px;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Roboto', sans-serif;
+      color: #fff;
+      background: url('https://getwallpapers.com/wallpaper/full/2/5/4/727006-best-windows-xp-desktop-backgrounds-3840x2160.jpg') center/cover no-repeat;
+    }
+
+    .container {
+      max-width: 750px;
+      width: 100%;
+      padding: 30px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .titulo {
+      text-align: center;
+      font-size: 2em;
+      font-weight: 700;
+      color: #e0f7ff;
+      margin-bottom: 20px;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    fieldset {
+      border: 2px solid rgba(255, 255, 255, 0.4);
+      border-radius: 15px;
+      padding: 20px;
+      margin-top: 20px;
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(8px);
+    }
+
+    legend {
+      font-size: 1.5em;
+      color: #b3e5fc;
+      font-weight: bold;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+      padding: 0 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      font-size: 1em;
+      line-height: 1.8em;
+    }
+
+    li {
+      padding-left: 1.5em;
+      position: relative;
+    }
+
+    li::before {
+      content: "📩";
+      position: absolute;
+      left: 0;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .subtitulo {
+      font-weight: bold;
+      font-size: 1.1em;
+      color: #c5f2ff;
+      margin: 10px 0;
+    }
+
+    .descricao {
+      font-size: 1em;
+      line-height: 1.6em;
+      text-align: justify;
+      color: #e0e0e0;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+
+      .titulo {
+        font-size: 1.5em;
+      }
+
+      legend {
+        font-size: 1.2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header class="titulo">Luís Roberto Lopes Santos</header>
+
+    <fieldset>
+      <legend>Contatos</legend>
+      <ul>
+        <li>Email: luisrobertols208@gmail.com</li>
+        <li><a href="https://www.linkedin.com/in/luisrobertolopes/">LinkedIn: linkedin.com/in/luisrobertolopes</a></li>
+        <li><a href="https://github.com/luisrobertolopes">GitHub: github.com/luisrobertolopes</a></li>
+      </ul>
+    </fieldset>
+
+    <fieldset>
+      <legend>Skills & Descrição</legend>
+      <div class="subtitulo">
+        Pentester Júnior & Desenvolvedor Full Stack | OSINT | Python, JS, C#, C, Lua | HTML/CSS | Web Scraping & APIs | MySQL
+      </div>
+      <div class="descricao">
+        🧠 <strong>Luís Roberto Lopes Santos</strong> | 17 anos<br />
+        💻 Programador pleno | Pentester Júnior | OSINT & Automação<br /><br />
+
+        Sou programador desde os 13 anos, com experiência em linguagens como Python, JavaScript, C#, C, Lua, além de HTML, CSS e MySQL.
+        Atuo em áreas como desenvolvimento web, automação, OSINT, pentest básico e análise de dados.<br /><br />
+
+        Tenho familiaridade com ferramentas como Git, Linux, APIs, Selenium e Playwright, e busco sempre aprender mais em segurança,
+        desenvolvimento e inteligência digital. Estou aberto a projetos e oportunidades que expandam meus conhecimentos.
+      </div>
+    </fieldset>
+  </main>
+</body>
+</html>
