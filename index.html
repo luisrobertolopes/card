@@ -13,18 +13,18 @@
     body {
       margin: 0;
       padding: 20px;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      min-height: 100vh;
       font-family: 'Roboto', sans-serif;
       color: #fff;
       background: url('https://getwallpapers.com/wallpaper/full/2/5/4/727006-best-windows-xp-desktop-backgrounds-3840x2160.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .container {
-      max-width: 750px;
       width: 100%;
+      max-width: 750px;
       padding: 30px;
       border-radius: 20px;
       background: rgba(255, 255, 255, 0.08);
@@ -80,6 +80,7 @@
     a {
       color: #fff;
       text-decoration: none;
+      word-break: break-word;
     }
 
     a:hover {
@@ -100,17 +101,47 @@
       color: #e0e0e0;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       .container {
         padding: 20px;
       }
 
       .titulo {
-        font-size: 1.5em;
+        font-size: 1.6em;
       }
 
       legend {
-        font-size: 1.2em;
+        font-size: 1.3em;
+      }
+
+      .descricao,
+      .subtitulo,
+      ul {
+        font-size: 0.95em;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 10px;
+      }
+
+      .container {
+        padding: 15px;
+      }
+
+      .titulo {
+        font-size: 1.4em;
+      }
+
+      legend {
+        font-size: 1.1em;
+      }
+
+      .descricao,
+      .subtitulo,
+      ul {
+        font-size: 0.9em;
       }
     }
   </style>
